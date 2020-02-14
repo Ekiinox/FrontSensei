@@ -1,0 +1,7 @@
+{
+  "name": "FrontSensei",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
