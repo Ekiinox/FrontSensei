@@ -36,6 +36,17 @@ const routes: Routes = [
               import('../tab2/tab2.module').then(m => m.Tab2PageModule)
           }
         ]
+      }
+      ,
+      {
+        path: 'connection',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../page-connection/page-connection.module').then(m => m.PageConnectionModule)
+          }
+        ]
       },
       {
         path: 'tab3',
