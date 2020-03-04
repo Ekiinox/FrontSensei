@@ -8,6 +8,16 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
+        path: 'mentors',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../page-mentors/mentors.module').then(m => m.MentorsPageModule)
+          }
+        ]
+      },
+      {
         path: 'tab1',
         children: [
           {

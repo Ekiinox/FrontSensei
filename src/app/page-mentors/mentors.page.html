@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Liste des mentors</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!-- List of Text Items -->
+  <ion-list>
+    <ion-item *ngFor="let mentor of mentors" (click)="goToMentorPage(mentor.id)">
+      {{mentor.name}}
+    </ion-item>
+    </ion-list>
+</ion-content>
